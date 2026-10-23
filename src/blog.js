@@ -25,6 +25,6 @@ if (postList) {
       `).join('');
     })
     .catch(() => {
-      postList.innerHTML = '<p class="load-error">게시글 목록을 불러오지 못했습니다. <a href="/blog/shin-yubin-hashimoto-2026/">대표 경기 분석 바로 읽기</a></p>';
+      postList.innerHTML = '<p class="load-error">게시글 목록을 불러오지 못했습니다. <a href="/blog/shin-yubin-lim-jonghoon-bronze-2026/">혼합복식 동메달 여정 바로 읽기</a></p>';
     });
 }

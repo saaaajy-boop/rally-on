@@ -1,4 +1,4 @@
-# RALLY — 2026 탁구 아시안컵 다시보기 가이드
+# RALLY — 2026 아시안게임 탁구 다시보기 가이드
 
 PC 화면을 우선으로 구성한 스포츠 콘텐츠 랜딩 페이지와 데이터 기반 내부 블로그입니다. 선수 사진 대신 CSS로 만든 자체 비주얼을 사용합니다.
 
@@ -36,11 +36,11 @@ Vercel의 `VERCEL_PROJECT_PRODUCTION_URL`을 사용해 canonical, sitemap, robot
 
 ## 공개 페이지
 
-- `/` — 2026 탁구 아시안컵 다시보기 메인 가이드
+- `/` — 2026 아이치·나고야 아시안게임 탁구 다시보기 메인 가이드
 - `/blog/` — 블로그 목록
-- `/blog/shin-yubin-hashimoto-2026/` — 신유빈 하시모토 역전승 경기 분석
+- `/blog/shin-yubin-lim-jonghoon-bronze-2026/` — 신유빈·임종훈 혼합복식 동메달 여정
 
-기존 `/blog/shin-yubin/` 주소는 새 상세 페이지로 이동합니다.
+기존 `/blog/shin-yubin/`과 `/blog/shin-yubin-hashimoto-2026/` 주소는 새 상세 페이지로 이동합니다.
 
 ## 콘텐츠와 측정
 
@@ -49,4 +49,4 @@ Vercel의 `VERCEL_PROJECT_PRODUCTION_URL`을 사용해 canonical, sitemap, robot
 - 이벤트 매개변수: `page_path`, `cta_location`, `link_url`, `match_name`
 - CTA 클릭 이벤트는 GTM이 감지할 수 있도록 `dataLayer`로 전달합니다.
 
-메인과 블로그의 `data-replay-cta` 링크는 지정된 5분 하이라이트 영상으로 연결됩니다.
+메인과 블로그의 `data-replay-cta` 링크는 SBS 공식 혼합복식 8강 영상 페이지로 연결됩니다.

@@ -13,13 +13,14 @@ const lastmod = '2026-10-23';
 const pages = [
   { file: 'index.html', path: '/', priority: '1.0' },
   { file: 'blog/index.html', path: '/blog/', priority: '0.8' },
-  { file: 'blog/shin-yubin-hashimoto-2026/index.html', path: '/blog/shin-yubin-hashimoto-2026/', priority: '0.9' }
+  { file: 'blog/shin-yubin-lim-jonghoon-bronze-2026/index.html', path: '/blog/shin-yubin-lim-jonghoon-bronze-2026/', priority: '0.9' }
 ];
 
 const sourceFiles = [
   ['index.html', 'index.html'],
   ['blog-index.html', 'blog/index.html'],
-  ['blog-detail.html', 'blog/shin-yubin-hashimoto-2026/index.html'],
+  ['blog-detail.html', 'blog/shin-yubin-lim-jonghoon-bronze-2026/index.html'],
+  ['legacy.html', 'blog/shin-yubin-hashimoto-2026/index.html'],
   ['legacy.html', 'blog/shin-yubin/index.html'],
   ['posts.json', 'data/posts.json'],
   ['blog.js', 'assets/blog.js'],
@@ -39,12 +40,12 @@ for (const page of pages) {
   const canonical = siteUrl ? `<link rel="canonical" href="${siteUrl}${page.path}">` : '';
   html = html.replace(/<!-- CANONICAL_START -->[\s\S]*?<!-- CANONICAL_END -->/, `<!-- CANONICAL_START -->${canonical}<!-- CANONICAL_END -->`);
 
-  if (page.path === '/blog/shin-yubin-hashimoto-2026/') {
+  if (page.path === '/blog/shin-yubin-lim-jonghoon-bronze-2026/') {
     const jsonLd = siteUrl ? `<script type="application/ld+json">${JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
-      headline: '신유빈 하시모토 역전승, 1-2에서 3-2로 뒤집은 아시안컵 명승부',
-      description: '신유빈의 하시모토 호노카 상대 3-2 역전승과 2026 탁구 아시안컵 16강 경기 흐름, 관전 포인트를 정리한 글입니다.',
+      headline: '신유빈·임종훈 동메달, 32강부터 8강까지의 여정',
+      description: '신유빈·임종훈의 2026 아시안게임 혼합복식 동메달 여정과 32강부터 8강까지의 경기 결과, SBS 공식 하이라이트를 정리한 글입니다.',
       datePublished: lastmod,
       dateModified: lastmod,
       inLanguage: 'ko-KR',

@@ -29,7 +29,7 @@ if (!window.__rallyReplayTrackingBound) {
         page_path: window.location.pathname,
         cta_location: link.dataset.ctaLocation || 'unknown',
         link_url: link.href,
-        match_name: link.dataset.matchName || '신유빈 vs 하시모토 호노카'
+        match_name: link.dataset.matchName || '신유빈·임종훈 혼합복식 8강'
       };
 
       window.dataLayer = window.dataLayer || [];
