@@ -32,16 +32,8 @@ if (!window.__rallyReplayTrackingBound) {
         match_name: link.dataset.matchName || '신유빈 vs 하시모토 호노카'
       };
 
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'replay_cta_click', {
-          page_path: detail.page_path,
-          cta_location: detail.cta_location,
-          link_url: detail.link_url,
-          match_name: detail.match_name
-        });
-      } else if (Array.isArray(window.dataLayer)) {
-        window.dataLayer.push(detail);
-      }
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(detail);
 
       window.dispatchEvent(new CustomEvent('replay_cta_click', { detail }));
     });

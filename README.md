@@ -47,6 +47,6 @@ Vercel의 `VERCEL_PROJECT_PRODUCTION_URL`을 사용해 canonical, sitemap, robot
 - 블로그 목록 데이터: `dist/data/posts.json`
 - 공통 CTA 이벤트: `replay_cta_click`
 - 이벤트 매개변수: `page_path`, `cta_location`, `link_url`, `match_name`
-- GTM/GA4가 추후 설치되면 기존 `gtag` 또는 `dataLayer`를 사용합니다. 현재는 측정 ID를 임의로 넣지 않았습니다.
+- CTA 클릭 이벤트는 GTM이 감지할 수 있도록 `dataLayer`로 전달합니다.
 
 메인과 블로그의 `data-replay-cta` 링크는 지정된 5분 하이라이트 영상으로 연결됩니다.
